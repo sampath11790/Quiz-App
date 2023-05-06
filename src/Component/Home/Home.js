@@ -13,6 +13,7 @@ import {
   ShareRounded,
   BorderColorRounded,
 } from "@mui/icons-material";
+import image1 from "../../Images/image1.jpg";
 
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
@@ -38,12 +39,12 @@ const Home = () => {
         flexDirection: "column",
       }}
     >
-      {/* <div className="img-container">
-        <img src="https://seekify-public.s3.ap-south-1.amazonaws.com/seekify-file-image%252Fwebp-1676280764794-The%20Daily%20MS%20Excel%20Quiz.webp"></img>
-      </div> */}
       <div className="img-container">
-        <img src="https://th.bing.com/th/id/R.c324072e23651b550c7fe81dcf654602?rik=bG0SPgwetTWG%2fg&riu=http%3a%2f%2femoryspoke.org%2fwp-content%2fuploads%2f2015%2f08%2fcollegegirl.jpg&ehk=AVgVmKH4mNX4g4sc9qL8smvbHR8qAmtHIorfKqRJxdI%3d&risl=&pid=ImgRaw&r=0"></img>
+        <img src={image1}></img>
       </div>
+      {/* <div className="img-container">
+        <img src="https://th.bing.com/th/id/R.c324072e23651b550c7fe81dcf654602?rik=bG0SPgwetTWG%2fg&riu=http%3a%2f%2femoryspoke.org%2fwp-content%2fuploads%2f2015%2f08%2fcollegegirl.jpg&ehk=AVgVmKH4mNX4g4sc9qL8smvbHR8qAmtHIorfKqRJxdI%3d&risl=&pid=ImgRaw&r=0"></img>
+      </div> */}
       <h2 className="head-name">
         The <span style={{ color: "green" }}>Daily</span> JavaScript{" "}
         <span style={{ color: "green" }}> Quiz</span>

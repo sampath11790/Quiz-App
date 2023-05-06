@@ -1,8 +1,17 @@
 import React from "react";
 import cls from "./Finalpage.module.css";
 import { ShareRounded } from "@mui/icons-material";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { Button } from "@mui/material";
 const FinalPage = ({ porps }) => {
+  let navigate = useNavigate();
+  function handleClick() {
+    // alert("some");
+
+    navigate("/");
+
+    return;
+  }
   const { state } = useLocation();
   let avgescorePercentage = (Number(state) * 100) / 5;
 
@@ -26,7 +35,7 @@ const FinalPage = ({ porps }) => {
         <div className={cls.finalmarks}>
           <span>
             your score
-            <span className={cls.valuesize}> 2/5</span>
+            <span className={cls.valuesize}> {state ? state : 0}/5</span>
           </span>
           <span>avg :2 marks</span>
         </div>
@@ -46,6 +55,15 @@ const FinalPage = ({ porps }) => {
           style={{ color: "purple", marginRight: 10 }}
         ></ShareRounded>
         share it with your friends!
+      </div>
+      <div className="start-button">
+        <Button
+          variant="contained"
+          sx={{ borderRadius: 15, width: 100, bgcolor: "purple" }}
+          onClick={handleClick}
+        >
+          Home
+        </Button>
       </div>
     </div>
   );

@@ -62,4 +62,8 @@
   .submit-container p {
     text-align: center;
   }
+  .karma-text {
+    text-align: center;
+    margin-left: 35px;
+  }
 }

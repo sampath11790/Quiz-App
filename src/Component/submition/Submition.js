@@ -35,7 +35,7 @@ const Submition = () => {
       <br />
       <br />
       <h3>what are karma points?</h3>
-      <p>
+      <p className="karma-text">
         karma points are awarded for various actions like attempting quizzes and
         watching videos allowing you to move up the leaderboards and unlock new
         features

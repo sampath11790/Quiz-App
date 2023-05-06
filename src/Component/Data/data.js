@@ -7,7 +7,6 @@ const data = {
         "A database",
         "A markup language",
         "A stylesheet language",
-        "A scripting language",
       ],
       correctIndex: 0,
     },
