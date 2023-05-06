@@ -1,0 +1,49 @@
+.qustion {
+  margin: 2px;
+  border: 1px solid black;
+  width: 400px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.time-qustion-length {
+  width: 30%;
+  display: flex;
+  margin: 5px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.time {
+  text-align: center;
+  width: 80px;
+  background-color: rgb(94, 209, 40);
+  border-radius: 20px;
+  color: aliceblue;
+}
+
+.qustion-length {
+  text-align: center;
+  width: 80px;
+  background-color: rgb(8, 43, 43);
+  border-radius: 20px;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 600px) {
+  .time-qustion-length {
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+  }
+  .qustion {
+    margin: 2px;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+}
